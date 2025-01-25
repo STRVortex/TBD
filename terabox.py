@@ -107,7 +107,7 @@ async def handle_message(client, message: Message):
         await message.reply_text("ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴀ ᴠᴀʟɪᴅ ʟɪɴᴋ.")
         return
 
-    reply_msg = await message.reply_text("sᴇɴᴅɪɴɢ ʏᴏᴜ ᴛʜᴇ ᴍᴇᴅɪᴀ...")
+    reply_msg = await message.reply_sticker("CAACAgUAAxkBAAKH0GeUwDFaXp72AngG3IS-yi0Y--_fAAIJEAACZWkhVBeICS99xE5RHgQ")
 
     try:
         file_path, thumbnail_path, video_title = await download_video(terabox_link, reply_msg, user_mention, user_id)
